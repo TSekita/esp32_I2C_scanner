@@ -4,11 +4,11 @@
 
 #define I2C_MASTER_SCL_IO           22          // SCL GPIO
 #define I2C_MASTER_SDA_IO           21          // SDA GPIO
-#define I2C_MASTER_NUM              I2C_NUM_0   // 使用するI2Cポート
-#define I2C_MASTER_FREQ_HZ          100000      // 通信速度
-#define I2C_MASTER_TX_BUF_DISABLE   0
-#define I2C_MASTER_RX_BUF_DISABLE   0
-#define I2C_TIMEOUT_MS              1000
+#define I2C_MASTER_NUM              I2C_NUM_0   // I2C port number to use
+#define I2C_MASTER_FREQ_HZ          100000      // I2C clock frequency
+#define I2C_MASTER_TX_BUF_DISABLE   0           // I2C master does not need buffer
+#define I2C_MASTER_RX_BUF_DISABLE   0           // I2C master does not need buffer
+#define I2C_TIMEOUT_MS              1000        // Timeout for I2C operation
 
 void i2c_master_init() {
     i2c_config_t conf = {
